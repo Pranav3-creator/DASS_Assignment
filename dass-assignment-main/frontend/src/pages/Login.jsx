@@ -8,7 +8,7 @@ export default function Login() {
   const [p, setP] = useState("")
 
   const s = async () => {
-    const r = await a.post("/auth/login", { e, p })
+   const r = await a.post("/api/auth/login", { e, p })
     login(r.data.t)
   }
 
