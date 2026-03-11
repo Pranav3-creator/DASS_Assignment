@@ -8,7 +8,7 @@ export default function Register() {
   const [c, setC] = useState("")
 
   const s = async () => {
-    await a.post("/auth/reg", { n, e, p, captcha: c })
+    await a.post("/api/auth/reg", { n, e, p, captcha: c })
     alert("done")
   }
 
